@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML" />
+    <meta
+      name="description"
+      content="My own personal website giving an insite to myself and my projects"
+    />
+    <meta name="author" content="Raymond Romero" />
+    <link rel="icon" type="image/x-icon" href="pics/favicon-32x32.png" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <title>Raymond Romero | SWE</title>
+    <style></style>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="headerNav">
+        <a href="index.html" class="navButtons">About Me</a>
+        <a href="Resume.pdf" target="_blank" class="navButtons">Resume</a>
+        <a href="projects.html" class="navButtons">Projects</a>
+        <a href="shed.html" class="navButtons">Shed</a>
+        <a href="nativedialogs.html" type="hidden"></a>
+        <a href="customdialogs.html" type="hidden"></a>
+        <a href="crud.html" type="hidden"></a>
+        <a href="methodtest.html">Method Tests</a>
+        <a href="webcomponent.html">Web Component</a>
+      </nav>
+      <h1 id="headerName"><strong>Raymond Romero</strong></h1>
+      <!-- <canvas id="myCanvas"></canvas> -->
+      <!-- <code>print("hello world")</code> -->
+      <picture>
+        <img
+          src="pics/selfie.jpeg"
+          alt="Photo of myself, Raymond Romero"
+          id="selfie"
+        />
+      </picture>
+      <h2 id="title"><b>Software Engineer</b></h2>
+      <h3 id="slogan"><i>to optimize the internet</i></h3>
+      <section id="headerContact">
+        <span id="contactName"><em>Contact:</em></span>
+        <a href="https://linkedin.com/in/raymond50romero"
+          ><img
+            src="pics/Linkedin.png"
+            alt="linkedin photo link"
+            class="contact"
+        /></a>
+        <a href="https://twitter.com/RayRay_Romero_"
+          ><img src="pics/Twitter.png" alt="twitter photo link" class="contact"
+        /></a>
+        <a href="https://www.facebook.com/raymond.romero.796"
+          ><img
+            src="pics/facebook.png"
+            alt="facebook photo link"
+            class="contact"
+        /></a>
+        <a href="https://www.instagram.com/rayray_romero/"
+          ><img
+            src="pics/instagram.jpeg"
+            alt="instagram photo link"
+            class="contact"
+        /></a>
+      </section>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <table id="myTable">
+          <colgroup>
+            <col />
+            <col />
+          </colgroup>
+          <tr id="tableHeaders">
+            <th id="aboutMeHeader">about me</th>
+            <th id="timelineHeader">timeline/skills</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td rowspan="2" id="aboutMe">
+                <div>
+                  <p>
+                    My name is Raymond Romero and I am an aspiring software
+                    engineer. I am currently a senior at
+                    <a href="https://ucsd.edu/">ucsd</a> majoring in
+                    Mathematics-Computer Science.
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    My goal is to create optimized, structured and well designed
+                    software that can serve as the foundation of which an idea
+                    can flurish into something great. My vision for the future
+                    is to have a more efficient internet that is capable of
+                    performing optimally and do so using the least amount of
+                    resources.
+                  </p>
+                </div>
+                <div>
+                  <details>
+                    <summary>hobbies</summary>
+                    <p>
+                      My hobbies include cooking, writing, reading, chess, and
+                      weightlifting
+                    </p>
+                  </details>
+                  <details>
+                    <summary>favorite programming language</summary>
+                    <p>My favorite programming language is Python and C++</p>
+                  </details>
+                  <details>
+                    <summary>fun facts</summary>
+                    <p>
+                      I wasn't a fan of mathematics in high school. In fact, I
+                      failed mathematics. It wasn't until college that I loved
+                      it
+                    </p>
+                  </details>
+                </div>
+                <div>
+                  <h4>My favorite animal</h4>
+                  <video
+                    src="https://www.youtube.com/watch?v=T14QnZMTPOQ"
+                  ></video>
+                  <iframe
+                    src="https://www.youtube.com/watch?v=T14QnZMTPOQ"
+                  ></iframe>
+                </div>
+              </td>
+              <td id="timeline">
+                <label><b>Timeline</b></label>
+                <ol>
+                  <li>Born in June 11, 1994</li>
+                  <li>
+                    Worked in agriculture out of high school until I was 21
+                  </li>
+                  <li>Enrolled in Imperial Valley College</li>
+                  <li>
+                    Got intrested in Mathematics which led me to Computer
+                    Science and got obsessed
+                  </li>
+                  <li>
+                    Became the team lead of the Robotics committee and built
+                    small robots to race them
+                  </li>
+                  <li>
+                    Got accepted into ucsd as a Mathematics-Computer Science
+                    major to start in Fall of 2020
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td id="skills">
+                <label><b>Skills</b></label>
+                <ul>
+                  <li>proficient in Html, Css, and Javascript</li>
+                  <li>fluent in Python, Java, and C/C++</li>
+                  <li>familiar with Node.js, Django, React and FastAPI</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div></div>
+    </main>
+    <hr />
+    <footer id="footer">
+      <form
+        action="mailto:raymond50romero@gmail.com"
+        method="post"
+        enctype="text/plain"
+        id="formEmail"
+      >
+        <fieldset id="reachMe">
+          <legend>Reach me via email</legend>
+          <label for="contactName">Name:</label>
+          <input
+            type="text"
+            name="contactName"
+            id="contactName"
+            placeholder="Enter Name"
+          />
+          <label for="contactEmail">email:</label>
+          <input
+            type="email"
+            name="contactEmail"
+            id="contactEmail"
+            placeholder="Enter email"
+          />
+          <label for="contactReason">Reason for contact:</label>
+          <input
+            list="Reason-for-contact"
+            name="contactReason"
+            id="contactReason"
+          />
+          <datalist id="Reason-for-contact">
+            <option value="reach out"></option>
+            <option value="offer"></option>
+            <option value="personal project"></option>
+            <option value="work project"></option>
+            <option value="current work in progress"></option>
+          </datalist>
+
+          <label for="contactDetails">details:</label>
+          <textarea
+            name="contactDetails"
+            id="contactDetails"
+            cols="30"
+            rows="10"
+            placeholder="Input query here"
+          ></textarea>
+          <input type="submit" value="send" id="submitForm" />
+        </fieldset>
+      </form>
+      <section id="footerContact">
+        <span><em>Contact:</em></span>
+        <a href="https://linkedin.com/in/raymond50romero" class="contact"
+          ><img
+            src="pics/Linkedin.png"
+            alt="linkedin photo link"
+            class="contact"
+        /></a>
+        <a href="https://twitter.com/RayRay_Romero_" class="contact"
+          ><img src="pics/Twitter.png" alt="twitter photo link" class="contact"
+        /></a>
+        <a href="https://www.facebook.com/raymond.romero.796" class="contact"
+          ><img
+            src="pics/facebook.png"
+            alt="facebook photo link"
+            class="contact"
+        /></a>
+        <a href="https://www.instagram.com/rayray_romero/" class="contact"
+          ><img
+            src="pics/instagram.jpeg"
+            alt="instagram photo link"
+            class="contact"
+        /></a>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Native Dialogs</title>
+    <script type="text/javascript" src="DOMPurify/dist/purify.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', (e) => {
+        let alertButton = document.getElementById('alertButton');
+        let confirmButton = document.getElementById('confirmButton');
+        let promptButton = document.getElementById('promptButton');
+        let saferPromptButton = document.getElementById('saferPromptButton');
+        let myDiv = document.getElementById('buttons');
+
+        // when alert button is clicked
+        alertButton.addEventListener('click', (event) => {
+          alert('alert button clicked');
+        });
+
+        // when confirmed button is clicked
+        confirmButton.addEventListener('click', (event) => {
+          let newOutput = document.createElement('output');
+          let value = newOutput.value;
+          newOutput.innerHTML = `The value returned by the confirm method is ${value}`;
+          myDiv.appendChild(newOutput);
+        });
+
+        // prompt is clicked
+        promptButton.addEventListener('click', (event) => {
+          let userPrompt = prompt('type');
+          if (userPrompt) {
+            alert(`user input : ${userPrompt}`);
+          } else {
+            alert('user didnt enter anything');
+          }
+        });
+
+        // safer prompt
+        saferPromptButton.addEventListener('click', (event) => {
+          let userPrompt = prompt('type');
+          if (userPrompt) {
+            let cleanUserPrompt = DOMPurify.sanitize(userPrompt);
+            alert(`clean user input : ${cleanUserPrompt}`);
+          } else {
+            alert('user didnt enter anything');
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Native Dialogs</h1>
+    </header>
+    <main>
+      <div id="buttons">
+        <button id="alertButton">Alert</button>
+        <button id="confirmButton" value="confirmed">Confirm</button>
+        <button id="promptButton">Prompt</button>
+        <button id="saferPromptButton">Safer Prompt</button>
+      </div>
+    </main>
+  </body>
+</html>

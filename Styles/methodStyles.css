@@ -1,0 +1,56 @@
+#headerNav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#headerName {
+  display: flex;
+  justify-content: center;
+}
+
+#methodForm {
+  display: grid;
+  grid-template-rows: 2rem, 3rem, 1rem;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-areas:
+    'id id name name'
+    'body body body body'
+    'postButton getButton putButton deleteButton';
+  justify-content: center;
+  gap: 20px;
+}
+
+#id {
+  grid-area: id;
+  width: 15rem;
+  height: 2rem;
+  margin-bottom: 0;
+}
+
+#articleName {
+  grid-area: name;
+  width: 15rem;
+  height: 2rem;
+  margin-bottom: 0;
+}
+
+#articleBody {
+  grid-area: body;
+}
+
+#postButton {
+  grid-area: postButton;
+}
+
+#getButton {
+  grid-area: getButton;
+}
+
+#putButton {
+  grid-area: putButton;
+}
+
+#deleteButton {
+  grid-area: deleteButton;
+}

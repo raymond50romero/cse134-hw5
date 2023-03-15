@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML" />
+    <meta name="description" content="Projects that I have created" />
+    <meta name="author" content="Raymond Romero" />
+    <link rel="icon" type="image/x-icon" href="pics/favicon-32x32.png" />
+    <link rel="stylesheet" href="Styles/projects_style.css" />
+    <title>Raymond Romero | Personal Projects</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="headerName">Personal Projects</h1>
+      <nav id="headerNav">
+        <a href="index.html" class="navButtons">About Me</a>
+        <a href="Resume.pdf" target="_blank" class="navButtons">Resume</a>
+        <a href="projects.html" class="navButtons">Projects</a>
+        <a href="shed.html" class="navButtons">Shed</a>
+        <a href="nativedialogs.html" type="hidden"></a>
+        <a href="customdialogs.html" type="hidden"></a>
+      </nav>
+      <select
+        name="projectSelector"
+        id="projectSelector"
+        onchange="location = this.value"
+      >
+        <option value="projects.html">personal</option>
+        <option value="work_projects.html">work</option>
+      </select>
+    </header>
+    <main id="projectsArea">
+      <section id="mainProjects">
+        <div class="project">
+          <h3 class="projectName">Roommates Hub</h3>
+          <span class="spanProjectImage">
+            <a
+              href="https://cse110-fa22-group3.github.io/cse110-fa22-group3/"
+              target="_blank"
+            >
+              <img
+                src="pics/Roommates_page.png"
+                alt="Roommates hub, a place for roommates"
+                class="projectImage"
+              />
+            </a>
+          </span>
+          <aside class="projectContent">
+            <span class="projectDescription">
+              Roommates Hub is a place for roommates to keep track of items
+              needed around the house. It helps who needs to do the chores next,
+              what money is owed to whom, passwords for accounts and general
+              information on everyone in the house
+            </span>
+            <span class="projectGithub">
+              <a
+                href="https://github.com/cse110-fa22-group3/cse110-fa22-group3"
+                target="_blank"
+                >link to github</a
+              >
+            </span>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

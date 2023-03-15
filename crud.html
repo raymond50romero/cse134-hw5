@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="blog.js"></script>
+    <title>small CRUD</title>
+  </head>
+  <body>
+    <header>
+      <h1>CRUD app</h1>
+    </header>
+    <main>
+      <!--Add new element-->
+      <section id="addSection">
+        <h2 id="emptyPost">Enter a post</h2>
+        <button id="addButton">add</button>
+        <form method="POST">
+          <dialog id="addNewPost">
+            <h3>Add new post</h3>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" />
+            <br />
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" />
+            <br />
+            <label for="summary">Summary:</label>
+            <textarea name="summary" id="summary" cols="30" rows="10">
+            </textarea>
+            <input type="submit" value="Add" id="submitNewPost" />
+            <button id="cancelNew">cancel</button>
+          </dialog>
+        </form>
+      </section>
+      <!--Show all posts-->
+      <section id="showSection">
+        <table>
+          <tr>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Summary</th>
+            <th>Options</th>
+          </tr>
+          <tbody id="Posts"></tbody>
+        </table>
+      </section>
+      <!--Form to show to edit item-->
+      <form id="editForm">
+        <h3>Edit Post</h3>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="editTitle" />
+        <br />
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="editDate" />
+        <br />
+        <label for="summary">Summary:</label>
+        <textarea name="summary" id="editSummary" cols="30" rows="10">
+        </textarea>
+        <input type="submit" value="Add" id="editSubmitPost" />
+        <button id="cancelEdit">cancel</button>
+      </form>
+      <!--form to shwo to delete item-->
+      <dialog id="deleteDialog">
+        <h3>Delete Post?</h3>
+        <button onclick="deletePost()">Yes</button>
+        <button id="cancelDelete">cancel</button>
+      </dialog>
+    </main>
+  </body>
+</html>

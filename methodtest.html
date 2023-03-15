@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="javascriptMethods.js"></script>
+    <link rel="stylesheet" href="Styles/methodStyles.css" />
+    <title>Method Tests</title>
+  </head>
+  <body>
+    <header>
+      <nav id="headerNav">
+        <a href="index.html" class="navButtons">About Me</a>
+        <a href="Resume.pdf" target="_blank" class="navButtons">Resume</a>
+        <a href="projects.html" class="navButtons">Projects</a>
+        <a href="shed.html" class="navButtons">Shed</a>
+        <a href="nativedialogs.html" type="hidden"></a>
+        <a href="customdialogs.html" type="hidden"></a>
+        <a href="crud.html" type="hidden"></a>
+        <a href="webcomponent.html">Web Component</a>
+      </nav>
+      <h1 id="headerName">Method Tests</h1>
+    </header>
+    <main>
+      <form id="methodForm">
+        <p id="today"></p>
+        <input type="text" name="id" id="id" placeholder="Enter id..." />
+        <input
+          type="text"
+          name="articleName"
+          id="articleName"
+          placeholder="Enter article name..."
+        />
+        <textarea
+          name="articleBody"
+          id="articleBody"
+          cols="30"
+          rows="10"
+          placeholder="Enter article body..."
+        ></textarea>
+        <button id="postButton">Post Button</button>
+        <button id="getButton">Get Button</button>
+        <button id="putButton">Put Button</button>
+        <button id="deleteButton">Delete Button</button>
+      </form>
+      <section>
+        <h3 id="displayText"></h3>
+        <output id="response"></output>
+      </section>
+    </main>
+  </body>
+</html>

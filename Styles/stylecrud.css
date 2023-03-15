@@ -1,0 +1,130 @@
+* {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+#emptyPost {
+  font-size: 3rem;
+}
+
+#addSection {
+  display: grid;
+  justify-content: center;
+}
+
+#addButton {
+  margin-bottom: 4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border: 3px solid black;
+  border-radius: 21px;
+}
+
+#addNewPost {
+  border: 3px solid black;
+  border-radius: 21px;
+}
+
+#submitNewPost {
+  border: 3px solid black;
+  border-radius: 21px;
+}
+
+#cancelNew {
+  border: 3px solid black;
+  border-radius: 21px;
+}
+
+#showSection {
+  display: grid;
+  justify-content: center;
+}
+
+#showTable {
+  display: grid;
+}
+
+#tableHeader {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  gap: 10rem;
+}
+
+.header {
+  font-size: x-large;
+}
+
+.postRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 5em;
+  grid-template-areas: 'title date summary options';
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+
+.postTitle {
+  grid-area: title;
+  text-align: center;
+  margin-right: 5em;
+}
+
+.postDate {
+  grid-area: date;
+  text-align: center;
+  margin-right: 5em;
+}
+
+.postSummary {
+  grid-area: summary;
+  text-align: center;
+  margin-right: 2em;
+}
+
+.postOptions {
+  grid-area: options;
+  text-align: center;
+  margin-left: 3em;
+}
+
+.editButton {
+  border: 3px solid black;
+  border-radius: 21px;
+}
+
+.deleteButton {
+  border: 3px solid black;
+  border-radius: 21px;
+}
+
+#editSubmitPost {
+  border: 3px solid black;
+  border-radius: 21px;
+}
+
+#cancelEdit {
+  border: 3px solid black;
+  border-radius: 21px;
+}
+
+#deleteDialog {
+  border: 3px solid black;
+  border-radius: 21px;
+}
+
+#yesDelete {
+  border: 3px solid black;
+  border-radius: 21px;
+}
+
+#cancelDelete {
+  border: 3px solid black;
+  border-radius: 21px;
+}
